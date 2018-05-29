@@ -62,12 +62,6 @@ class PlaneModel
     private $plane;
 
 
-    public function __toString()
-    {
-        // TODO: Implement __toString() method.
-        return $this->model. " " . $this->manufacturer;
-    }
-
     /**
      * Get id
      *
@@ -196,46 +190,5 @@ class PlaneModel
     public function getIsAvailable()
     {
         return $this->isAvailable;
-    }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->plane = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
-    /**
-     * Add plane
-     *
-     * @param \AppBundle\Entity\Flight $plane
-     *
-     * @return PlaneModel
-     */
-    public function addPlane(\AppBundle\Entity\Flight $plane)
-    {
-        $this->plane[] = $plane;
-
-        return $this;
-    }
-
-    /**
-     * Remove plane
-     *
-     * @param \AppBundle\Entity\Flight $plane
-     */
-    public function removePlane(\AppBundle\Entity\Flight $plane)
-    {
-        $this->plane->removeElement($plane);
-    }
-
-    /**
-     * Get plane
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getPlane()
-    {
-        return $this->plane;
     }
 }

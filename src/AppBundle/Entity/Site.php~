@@ -249,38 +249,4 @@ class Site
         return $this->departures;
     }
 
-
-    /**
-     * Add arrival
-     *
-     * @param \AppBundle\Entity\Flight $arrival
-     *
-     * @return Site
-     */
-    public function addArrival(\AppBundle\Entity\Flight $arrival)
-    {
-        $this->arrival[] = $arrival;
-
-        return $this;
-    }
-
-    /**
-     * Remove arrival
-     *
-     * @param \AppBundle\Entity\Flight $arrival
-     */
-    public function removeArrival(\AppBundle\Entity\Flight $arrival)
-    {
-        $this->arrival->removeElement($arrival);
-    }
-
-    /**
-     * Get arrival
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getArrival()
-    {
-        return $this->arrival;
-    }
 }
