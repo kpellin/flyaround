@@ -38,9 +38,9 @@ class PlaneModel
     /**
      * @var int
      *
-     * @ORM\Column(name="cuiseSpeed", type="smallint")
+     * @ORM\Column(name="cruiseSpeed", type="smallint")
      */
-    private $cuiseSpeed;
+    private $cruiseSpeed;
 
     /**
      * @var int
@@ -127,27 +127,27 @@ class PlaneModel
     }
 
     /**
-     * Set cuiseSpeed
+     * Set cruiseSpeed
      *
-     * @param integer $cuiseSpeed
+     * @param integer $cruiseSpeed
      *
      * @return PlaneModel
      */
-    public function setCuiseSpeed($cuiseSpeed)
+    public function setCruiseSpeed($cruiseSpeed)
     {
-        $this->cuiseSpeed = $cuiseSpeed;
+        $this->cruiseSpeed = $cruiseSpeed;
 
         return $this;
     }
 
     /**
-     * Get cuiseSpeed
+     * Get cruiseSpeed
      *
      * @return int
      */
-    public function getCuiseSpeed()
+    public function getCruiseSpeed()
     {
-        return $this->cuiseSpeed;
+        return $this->cruiseSpeed;
     }
 
     /**
